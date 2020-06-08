@@ -2,6 +2,8 @@ package com.ybcphone.code.pi.ui.main;
 
 
 import android.app.ActivityManager;
+
+
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
@@ -105,11 +107,13 @@ public class WelcomeActivity extends BaseActivity {
                 startAPP(Consts.PACKAGE_NAME_spotify);
             }
         });
-     Button activity_welocome_end = (Button) findViewById(R.id.activity_welocome_end);
+        Button activity_welocome_end = (Button) findViewById(R.id.activity_welocome_end);
         activity_welocome_end.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             finish();
+                clearAppData2(Consts.PACKAGE_NAME_netflix);
+                clearAppData2(Consts.PACKAGE_NAME_spotify);
+                finish();
             }
         });
 
@@ -126,87 +130,57 @@ public class WelcomeActivity extends BaseActivity {
 
 
     }
-//
-//    public static boolean deleteAppData(String packageName) {
-////
-////
-////        getPackageSizeInfo = packageManager.getClass()
-////                .getMethod("getPackageSizeInfo",
-////                        String.class, Class.forName("android.content.pm.IPackageStatsObserver");
-////
-//
-//        boolean isSuccess = false;
-//        Method clearMethod;
-//        Object am = null;
-//        IPackageDataObserver.Stub mStub = new IPackageDataObserver.Stub() {
-//            public void onRemoveCompleted(String paramAnonymousString, boolean paramAnonymousBoolean) {
-//            }
-//        };
-//        try {
-//            Class<?> activityManagerNative = Class.forName("android.app.ActivityManagerNative");
-//            // android.app.IActivityManager
-//            am = activityManagerNative.getMethod("getDefault").invoke(activityManagerNative);
-//
-//            clearMethod = am.getClass().getMethod("clearApplicationUserData", String.class, boolean.class,IPackageDataObserver.class, int.class);
-//            if (clearMethod != null) {
-//                Log.e("ClearCacheUtils", "clearMethod 9.0 ");
-//                clearMethod.setAccessible(true);
-//                isSuccess = (boolean) clearMethod.invoke(am, packageName, true, mStub, 0);
-//            }
-//
-//        } catch (Exception localException) {
-//            localException.printStackTrace();
-//            Log.e("ClearCacheUtils", "Exception:" + localException.getMessage());
-//            Log.e("ClearCacheUtils", "clearMethod <9.0 ");
-//            try {
-//                clearMethod = am.getClass().getMethod("clearApplicationUserData", String.class,IPackageDataObserver.class, int.class);
-//                if(clearMethod!=null) {
-//                    clearMethod.setAccessible(true);
-//                    isSuccess = (boolean) clearMethod.invoke(am, packageName, mStub, 0);
-//                }
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//                shellRun("pm clear " + packageName);
-//            }
-//        }
-//        return isSuccess;
-//    }
 
-    private static String shellRun(String command) {
-        Process process = null;
-        BufferedReader bufferedReader = null;
-        String result = "";
+
+    private void clearAppData(String packageName) {
         try {
-            process = Runtime.getRuntime().exec(command);
-            bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String line = "";
-            while ((line = bufferedReader.readLine()) != null) {
-                result += line;
-            }
-            process.waitFor();
+            // clearing app data
+//            if (Build.VERSION_CODES.KITKAT <= Build.VERSION.SDK_INT) {
+//                ((ActivityManager)getSystemService(ACTIVITY_SERVICE)).clearApplicationUserData(); // note: it has a return value!
+//            } else {
+            //     String packageName = getApplicationContext().getPackageName();
+            Runtime runtime = Runtime.getRuntime();
+
+            runtime.exec("pm clear " + packageName);
+//            }
+
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            if (bufferedReader != null) {
-                try {
-                    bufferedReader.close();
-                } catch (IOException e) {
-                    // TODO: handle exception
-                }
-            }
-            if (process != null) {
-                process.destroy();
-            }
         }
-        return result;
     }
+
+
+    private void clearAppData2(String packageName) {
+
+
+        try {
+            Process suProcess = Runtime.getRuntime().exec("su");
+            DataOutputStream os = new DataOutputStream(suProcess.getOutputStream());
+            os.writeBytes("adb shell" + "\n");
+            os.flush();
+            os.writeBytes("pm clear " + packageName + "\n");
+            os.flush();
+            os.close();
+            suProcess.waitFor();
+
+        } catch (IOException ex) {
+            ex.getMessage();
+            Toast.makeText(getApplicationContext(), ex.getMessage(), Toast.LENGTH_LONG).show();
+        } catch (SecurityException ex) {
+            Toast.makeText(getApplicationContext(), "Can't get root access2",
+                    Toast.LENGTH_LONG).show();
+        } catch (Exception ex) {
+            Toast.makeText(getApplicationContext(), "Can't get root access3",
+                    Toast.LENGTH_LONG).show();
+        }
+    }
+
 
     private void startService() {
 
         startService(new Intent(WelcomeActivity.this, FloatingPIButtonService.class));
         startService(new Intent(WelcomeActivity.this, FloatingFunctionBarService.class));
     }
-
 
 
     private void startAPP(String packageName) {
