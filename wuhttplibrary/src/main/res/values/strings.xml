@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">My Http Library</string>
+
+
+
+    <string name="track_1">活動時間:</string>
+    <string name="track_2">剩餘時間:</string>
+    <string name="track_3">成員</string>
+
+    <string name="text_year">年</string>
+    <string name="text_month">月</string>
+    <string name="text_day">日</string>
+    <string name="text_tian">天</string>
+    <string name="text_shi">小時</string>
+    <string name="text_fen">分</string>
+    <string name="text_miao">秒</string>
+
+
+    <string name="permission_title_rationale">授權許可</string>
+    <string name="label_cancel">取消</string>
+    <string name="label_ok">確定</string>
+    <string name="label_select_picture">請選擇圖片</string>
+    <!--nohttp error -->
+        <string name="error_please_check_network">請檢查網絡。 </string>
+        <string name="error_timeout">請求超時，網絡不好或者服務器不穩定。 </string>
+        <string name="error_not_found_server">未發現指定服務器，清切換網絡後重試。 </string>
+        <string name="error_url_error">URL錯誤。 </string>
+        <string name="error_not_found_cache">沒有找到緩存.</string>
+        <string name="error_unknow">未知錯誤。 </string>
+        <string name="error_response_code">服務器響應碼%1$d​​</string>
+        <string name="error_response_code_dex">服務器響應碼%1$d​​，如果你們服務器在這種情況下也返回數據你可以處理。 </string>
+        <!-- RequestMethod -->
+
+        <string name="request_json_result">請求方法：%1$s\n請求地址：%2$s\n響應數據：%3$s\n業務狀態碼：%4$s。 </string>
+        <string name="request_succeed_head">請求成功, 請求方式為HEAD, 沒有響應內容。 </string>
+        <string name="request_method_head">請求方法為HEAD，沒有響應內容。 </string>
+        <string name="request_method_patch">服務器不支持的請求方法。 </string>
+        <string name="request_method_not_allow">服務器僅僅支持請求方法：%1$s</string>
+
+        <string name="request_start">發起請求</string>
+        <string name="request_original_result">響應碼：%1$d\n花費時間：%2$d毫秒。 </string>
+        <string name="method_request_failed">有的方法為什麼請求失敗？ </string>
+        <string name="method_request_failed_reason">在RFC2616中規定了Http1.1支持的請求方法，有些服務器、客戶端(Android系統)不支持某些請求方法，所以請求失敗是正常的，但是我們還是要遵守協議，推薦服務器和客戶端都支持，這是非常好的設計和體驗。 </string>
+        <string name="request_succeed">請求成功</string>
+        <string name="request_failed">請求失敗</string>
+
+</resources>

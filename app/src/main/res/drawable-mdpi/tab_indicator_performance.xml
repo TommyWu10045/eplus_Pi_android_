@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Non focused states -->
+    <item android:state_selected="false" android:drawable="@color/disabled_tab" />
+    <!-- Non focused states -->
+    <item android:state_selected="true"  android:drawable="@color/enabled_tab_a7" />
+
+    <!-- Focused states -->
+    <item android:state_selected="false" android:state_pressed="false" android:drawable="@color/disabled_tab" />
+    <item  android:state_selected="true" android:state_pressed="false" android:drawable="@color/enabled_tab_a7" />
+
+</selector>

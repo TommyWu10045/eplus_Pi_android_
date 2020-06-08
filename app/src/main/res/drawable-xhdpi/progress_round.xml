@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:oneshot="true">
+    <item android:drawable="@drawable/ani_logo_1" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_2" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_3" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_4" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_5" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_6" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_7" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_8" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_9" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_10" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_11" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_12" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_13" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_14" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_15" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_16" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_17" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_18" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_19" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_20" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_21" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_22" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_23" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_24" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_25" android:duration="100"/>
+    <item android:drawable="@drawable/ani_logo_26" android:duration="100"/>
+</animation-list>

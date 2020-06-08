@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+//    implementationSdkVersion 27
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId 'com.ybcphone.code.pi'
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 19
+        versionName '1.0'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-messaging:10.2.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.jpardogo.materialtabstrip:library:1.1.1'
+    implementation 'com.android.support:appcompat-v7:23.0.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:23.0.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.brucetoo.pickview:library:1.2.3'
+    implementation 'com.bm.photoview:library:1.4.1'
+    implementation 'com.github.andremion:counterfab:1.0.1'
+    implementation 'com.yanzhenjie.nohttp:nohttp:1.1.11'
+    implementation project(':wuhttplibrary')
+}
+

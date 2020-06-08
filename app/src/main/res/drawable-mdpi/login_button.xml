@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- disable -->
+    <item android:drawable="@drawable/create_btn_disabled" android:state_enabled="false" />
+    <!-- click -->
+    <item android:drawable="@drawable/create_btn_tapped" android:state_enabled="true" android:state_pressed="true" />
+    <!-- unclick -->
+    <item android:drawable="@drawable/create_btn" android:state_enabled="true" android:state_pressed="false" />
+</selector>

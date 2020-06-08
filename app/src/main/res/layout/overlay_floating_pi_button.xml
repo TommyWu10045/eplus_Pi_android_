@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/over_layout_all"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+  
+
+    <ImageView
+        android:id="@+id/overlay_floating_pi_button_circle"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/shape_circle_1"/>
+
+    <ImageView
+        android:id="@+id/overlay_floating_pi_button_circle2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_margin="27dp"
+        android:background="@drawable/shape_circle_2"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/overlay_floating_pi_button_circle_btn_eplus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_circle_gray_btn"
+        android:text="Eplus"
+        android:textColor="@color/white"
+        android:textSize="@dimen/stand_font_s"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/overlay_floating_pi_button_circle_btn_nfx"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/shape_circle_gray_btn"
+        android:text="NFX"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/stand_font_s"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/overlay_floating_pi_button_circle_btn_spy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_circle_gray_btn"
+        android:text="SPY"
+        android:textColor="@color/white"
+        android:textSize="@dimen/stand_font_s"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/overlay_floating_pi_button_circle_btn_end"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/shape_circle_gray_btn"
+        android:text="END"
+        android:textColor="@color/white"
+        android:textSize="@dimen/stand_font_s"/>
+
+
+    <ImageButton
+        android:id="@+id/overlay_floating_pi_button_pi_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:clickable="false"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_hit"/>
+
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/fabHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:fabSize="normal"/>
+
+
+</RelativeLayout>
+

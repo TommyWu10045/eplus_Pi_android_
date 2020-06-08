@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "120613591169",
+    "firebase_url": "https://superpi-d0802.firebaseio.com",
+    "project_id": "superpi-d0802",
+    "storage_bucket": "superpi-d0802.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120613591169:android:cfb6747a30c46be2",
+        "android_client_info": {
+          "package_name": "com.ybcphone.code.superpi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120613591169-t3abkiuki843p1g3btngrfi278h47ti3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ybcphone.code.superpi",
+            "certificate_hash": "53886f1ac7e1220f34331455aec63f0152181ace"
+          }
+        },
+        {
+          "client_id": "120613591169-dho9ev85heiotvpjdob045jiesg738j6.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "120613591169-dho9ev85heiotvpjdob045jiesg738j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfpQ_MbwbIpIguaiUBDQiSAOYI8oAsIb4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120613591169-dho9ev85heiotvpjdob045jiesg738j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120613591169:android:ca781710d5aee817",
+        "android_client_info": {
+          "package_name": "com.ybcphone.code.totur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120613591169-b9sl9c7mlkh52ik12pr9s2hlgd9frmom.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ybcphone.code.totur",
+            "certificate_hash": "53886f1ac7e1220f34331455aec63f0152181ace"
+          }
+        },
+        {
+          "client_id": "120613591169-dho9ev85heiotvpjdob045jiesg738j6.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "120613591169-dho9ev85heiotvpjdob045jiesg738j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfpQ_MbwbIpIguaiUBDQiSAOYI8oAsIb4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120613591169-dho9ev85heiotvpjdob045jiesg738j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

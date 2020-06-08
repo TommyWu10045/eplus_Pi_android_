@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--&lt;!&ndash; click &ndash;&gt;-->
+    <!--<item android:drawable="@drawable/border_e6_2dp_solid_e4" android:state_pressed="true" />-->
+    <!--&lt;!&ndash; unclick &ndash;&gt;-->
+    <!--<item android:drawable="@drawable/border_e6_2dp_solid_ff" android:state_pressed="false" />-->
+
+    <!-- state_activated -->
+    <item android:drawable="@color/list_bg_taped" android:state_pressed="false" android:state_activated="true" />
+
+    <!-- click -->
+    <item android:drawable="@color/list_bg_taped" android:state_pressed="true" />
+    <!-- unclick -->
+    <item android:drawable="@color/white" android:state_pressed="false" android:state_activated="false"/>
+
+
+</selector>

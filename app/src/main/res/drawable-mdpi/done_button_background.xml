@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/start_disabled" android:state_enabled="false" />
+    <!-- click -->
+    <item android:drawable="@drawable/done_click" android:state_pressed="true" />
+    <!-- unclick -->
+    <item android:drawable="@drawable/done_unclick" android:state_pressed="false" />
+
+</selector>

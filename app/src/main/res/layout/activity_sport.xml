@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_sport"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/gray_background"
+                android:keepScreenOn="true"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_sport_speed"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_speed_title"
+                android:layout_width="208dp"
+                android:layout_height="53dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="0dp"
+                android:background="#269ed3"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="aspeed"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="normal"/>
+
+            <LinearLayout
+                android:id="@+id/ll_speed_comb"
+                android:layout_width="203dp"
+                android:layout_height="75dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="24.9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_speed_value"
+                    android:layout_width="145dp"
+                    android:layout_height="75dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="right"
+                    android:textColor="#269ed3"
+                    android:textSize="64sp"
+                    android:textStyle="italic"
+                    tools:text="5"/>
+
+                <TextView
+                    android:id="@+id/tv_speed_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="right"
+                    android:text="aspeed_unit"
+                    android:textColor="#444444"
+                    android:textSize="24dp"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="184dp"
+                android:layout_height="88dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="21dp">
+
+                <Button
+                    android:id="@+id/btn_speed_down"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/btn_down_select"
+                    android:enabled="false"/>
+
+                <Button
+                    android:id="@+id/btn_speed_up"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/btn_up_select"
+                    android:enabled="false"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="617dp">
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="normal"/>
+
+        </RelativeLayout>
+
+        <!--btn_check_speed-->
+
+        <!--iv_speed_chg-->
+        <RelativeLayout
+            android:id="@+id/btn_changing"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="617dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_speed_chg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sport_incline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_incline_title"
+                android:layout_width="208dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="0dp"
+                android:background="#f8b62a"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="aincline"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="normal"/>
+
+            <LinearLayout
+                android:id="@+id/ll_incline_comb"
+                android:layout_width="203dp"
+                android:layout_height="75dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="23.9dp"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_incline_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#f8b62a"
+                    android:textSize="64sp"
+                    android:textStyle="italic"
+                    tools:text="1000"/>
+
+                <TextView
+                    android:id="@+id/tv_incline_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:fontFamily="sans-serif"
+                    android:text="apercent"
+                    android:textColor="#444444"
+                    android:textSize="24dp"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="184dp"
+                android:layout_height="88dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="21dp">
+
+                <Button
+                    android:id="@+id/btn_incline_down"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/btn_down_select"
+                    android:enabled="false"/>
+
+                <Button
+                    android:id="@+id/btn_incline_up"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/btn_up_select"
+                    android:enabled="false"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_incline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="617dp">
+
+            <TextView
+                android:id="@+id/tv_incline"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="normal"/>
+
+        </RelativeLayout>
+
+        <!--btn_check_incline-->
+
+        <!--iv_incline_chg-->
+        <RelativeLayout
+            android:id="@+id/btn_changing_incline"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="617dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/rectangle_13"
+                android:textSize="24sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_incline_chg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_btns"
+        android:layout_width="847.9dp"
+        android:layout_height="131dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background">
+
+        <ImageButton
+            android:id="@+id/btn_cool_down"
+            android:layout_width="134dp"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="72dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_cool_down_select"/>
+
+        <TextView
+            android:id="@+id/tv_btn_cool_down"
+            android:layout_width="134dp"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="72dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:text="acool_down"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/btn_pause"
+            android:layout_width="134dp"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="214dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_pause_select"/>
+
+        <TextView
+            android:id="@+id/tv_btn_pause"
+            android:layout_width="134dp"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="214dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:text="apause"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/btn_fan"
+            android:layout_width="134dp"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="500dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_fan_select"/>
+
+        <TextView
+            android:id="@+id/tv_btn_fan"
+            android:layout_width="134dp"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="500dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:text="afan"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="134dp"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="642dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_menu_select"/>
+
+        <TextView
+            android:id="@+id/tv_btn_menu"
+            android:layout_width="134dp"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="642dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:text="amenu"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/btn_stop"
+            android:layout_width="136dp"
+            android:layout_height="119dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            android:paddingTop="17dp"
+            android:src="@drawable/btn_stop_select"/>
+
+        <TextView
+            android:id="@+id/tv_btn_stop"
+            android:layout_width="177dp"
+            android:layout_height="119dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="62dp"
+            android:text="astop"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tra_header_red"/>
+
+
+</RelativeLayout>
